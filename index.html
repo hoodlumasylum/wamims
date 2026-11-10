@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WAMIMS – Walk A Mile In My Shoes (Preview)</title>
+  <meta name="description" content="WAMIMS community platform preview – real people, real struggles, real change. Demo only.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="demo-banner"><strong>PREVIEW / DEMO</strong> — No real payments, PayPal, or live accounts. C-Notes and backing are localStorage only.</div>
+
+  <header class="topnav">
+    <div class="logo" title="WAMIMS home">WAMIMS</div>
+    <nav class="nav-links">
+      <button class="nav-btn active" data-route="home">Home</button>
+      <button class="nav-btn" data-route="explore">Explore</button>
+      <button class="nav-btn" data-route="create">Create</button>
+      <button class="nav-btn" data-route="messages">Messages</button>
+      <button class="nav-btn notif" data-route="notifications">Notifications</button>
+    </nav>
+    <input class="search-pill" type="search" placeholder="Search WAMIMS..." aria-label="Search WAMIMS">
+    <button class="avatar-btn" data-route="profile" title="Your profile" onclick="location.hash='#/profile/you'">
+      <img src="assets/avatar-you.jpg" alt="Profile">
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Hubs"></aside>
+    <main class="main" id="main"></main>
+    <aside class="rightcol" aria-label="Create and trending"></aside>
+  </div>
+
+  <p class="footer-note">WAMIMS · Walk A Mile In My Shoes · Front-end preview · Original art · AI hosts are labelled · Not clinical advice</p>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
